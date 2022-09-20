@@ -1,3 +1,3 @@
-library custom_dropdown;
+library simple_custom_dropdown;
 
-export 'src/custom_dropdown.dart';
+export 'src/simple_custom_dropdown.dart';
