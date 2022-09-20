@@ -1,6 +1,6 @@
 name: custom_dropdown
 description: Custom Dropdown package for those who doesn't like default one.
-version: 0.0.1
+version: 0.0.3
 homepage: https://github.com/htoopyaelinn56/custom_dropdown.git
 
 environment:
