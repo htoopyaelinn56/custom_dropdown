@@ -1,1 +1,1 @@
-library custom_dropdown_flutter;
+library custom_dropdown;

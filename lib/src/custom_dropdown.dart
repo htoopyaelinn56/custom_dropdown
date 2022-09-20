@@ -1,4 +1,4 @@
-import 'package:custom_dropdown_flutter/src/anchored_overlay.dart';
+import 'package:custom_dropdown/src/anchored_overlay.dart';
 import 'package:flutter/material.dart';
 
 class CustomDropDown<T> extends StatefulWidget {
