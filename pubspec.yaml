@@ -1,7 +1,7 @@
 name: custom_dropdown_flutter
 description: A new Flutter package project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/htoopyaelinn56/custom_dropdown
 
 environment:
   sdk: '>=2.19.0-213.0.dev <3.0.0'
