@@ -16,7 +16,7 @@ class CustomDropDown<T> extends StatefulWidget {
   final List<T> itemList;
   final String hintText;
   final Widget? initialValue;
-  final Widget Function(T)? dropdownItemBuilder;
+  final Widget Function(BuildContext, T)? dropdownItemBuilder;
   final Function(T)? onChanged;
   final double width;
   final double height;
@@ -102,7 +102,7 @@ class _CustomDropDownState<T> extends State<CustomDropDown<T>> with SingleTicker
                                   padding: const EdgeInsets.all(10),
                                   child: Row(
                                     children: [
-                                      widget.dropdownItemBuilder?.call(widget.itemList[i]) ?? const SizedBox.shrink(),
+                                      widget.dropdownItemBuilder?.call(context, widget.itemList[i]) ?? const SizedBox.shrink(),
                                     ],
                                   ),
                                 );
@@ -111,7 +111,7 @@ class _CustomDropDownState<T> extends State<CustomDropDown<T>> with SingleTicker
                               },
                               child: Padding(
                                 padding: const EdgeInsets.all(10),
-                                child: widget.dropdownItemBuilder?.call(widget.itemList[i]),
+                                child: widget.dropdownItemBuilder?.call(context, widget.itemList[i]),
                               ),
                             ),
                           ),
