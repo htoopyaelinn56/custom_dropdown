@@ -21,7 +21,11 @@ class AnchoredOverlay extends StatelessWidget {
         showOverlay: showOverlay,
         overlayBuilder: (BuildContext overlayContext) {
           RenderBox box = context.findRenderObject() as RenderBox;
-          final center = box.size.center(box.localToGlobal(const Offset(0.0, 0.0)));
+          final center = box.size.center(
+            box.localToGlobal(
+              const Offset(0.0, 0.0),
+            ),
+          );
 
           return overlayBuilder(overlayContext, center);
         },
@@ -44,10 +48,10 @@ class OverlayBuilder extends StatefulWidget {
   });
 
   @override
-  _OverlayBuilderState createState() => _OverlayBuilderState();
+  OverlayBuilderState createState() => OverlayBuilderState();
 }
 
-class _OverlayBuilderState extends State<OverlayBuilder> {
+class OverlayBuilderState extends State<OverlayBuilder> {
   OverlayEntry? overlayEntry;
 
   @override
