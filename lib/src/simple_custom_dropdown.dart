@@ -75,7 +75,7 @@ class _CustomDropDownState<T> extends State<CustomDropDown<T>> with SingleTicker
         return CenterAbout(
           position: Offset(offset.dx, offset.dy),
           child: CompositedTransformFollower(
-            offset: const Offset(0, 55),
+            offset: Offset(0, widget.height + 5),
             link: _layerLink,
             showWhenUnlinked: false,
             child: Material(
